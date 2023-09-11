@@ -1,7 +1,6 @@
 import { MessagesService } from './../../services/messages/messages.service';
-import { Component, OnInit } from '@angular/core';
 
-import { MessagesService } from 'src/app/services/messages/messages.service';
+import { Component, OnInit } from '@angular/core';
 
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
