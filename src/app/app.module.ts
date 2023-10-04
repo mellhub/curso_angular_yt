@@ -31,7 +31,7 @@ import { zip } from 'rxjs';
     MessagesComponent,
     MomentFormComponent,
     EditMomentComponent,
-  ], 
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

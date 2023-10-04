@@ -67,7 +67,7 @@ export class MomentComponent implements OnInit {
     if (id) {
       await this.momentService.removeMoment(id).subscribe();
 
-      this.messagesService.add(`Momento excluído com sucesso!`);
+      this.messagesService.add('Momento excluído com sucesso!');
 
       this.router.navigate(['/']);
     }

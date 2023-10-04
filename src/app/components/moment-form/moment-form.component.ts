@@ -22,11 +22,12 @@ export class MomentFormComponent implements OnInit {
     if (this.momentData) {
       console.log(this.momentData);
       this.momentForm = new FormGroup({
-        id: new FormControl(this.momentData.id),
-        title: new FormControl(this.momentData.title, [Validators.required]),
-        description: new FormControl(this.momentData.description, [
-          Validators.required,
-        ]),
+        id: new FormControl(this.momentData ? this.momentData.id : ''),
+        title: new FormControl(this.momentData ? this.momentData.title : '', [Validators.required]),
+        description: new FormControl(
+          this.momentData ? this.momentData.description : '',
+          [Validators.required]
+          ),
         image: new FormControl(''),
       });
     } else {

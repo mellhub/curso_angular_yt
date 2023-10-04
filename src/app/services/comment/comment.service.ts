@@ -10,12 +10,12 @@ import { Response } from 'src/app/Response';
   providedIn: 'root',
 })
 export class CommentService {
-  private baseApiUrl = environment.baseApiUrl;
+  private baseApiUrl = environment.baseApiUrl
   private apiUrl = `${this.baseApiUrl}api/moments`;
 
   constructor(private http: HttpClient) {}
 
-  createComment(data: Comment): Observable<Response<Comment>> {
+  createComment(data: Comment): Observable<Response<Comment>> {""
     const url = `${this.apiUrl}/${data.momentId}/comments`;
     return this.http.post<Response<Comment>>(url, data);
   }
